@@ -64,9 +64,9 @@ function successBlock(name) {
 
 					if (!errorMess) {
 						var formData = new FormData(form);
-						formData.append('service_id', 'default_service'); //TODO: add
-						formData.append('template_id', 'template_abc'); //TODO: add
-						formData.append('user_id', 'abc'); //TODO: add
+						formData.append('service_id', 'service_3cwepve');
+						formData.append('template_id', 'template_akb1vn5');
+						formData.append('user_id', '1Rp-OPup7PraMEnXH');
 
 						$.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
 							type: 'POST',
