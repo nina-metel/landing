@@ -789,6 +789,20 @@
 		box-sizing:border-box;
 	}
 
+	.inner-portfolio {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		vertical-align: top;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.inner-portfolio .second {
+		padding-left: 150px;
+	}
+
 	.light-section-wrapper, .dark-section-wrapper {
 		margin-left: calc(50% - 50vw)!important;
 		margin-right: calc(50% - 50vw)!important;
@@ -1725,6 +1739,11 @@
 	}
 
 	@media all and (min-width: 1025px) {
+
+		.inner-portfolio .second {
+			padding-left: 190px;
+			text-align: end;
+		}
 
 		.classic-menu nav {
 			position: relative;
