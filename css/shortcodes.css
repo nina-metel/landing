@@ -3831,3 +3831,72 @@
 	}
 		
 }
+
+/*--------------------------------------------------
+	Contact form — clear floats before notice (layout only)
+---------------------------------------------------*/
+
+#contact-formular .contact-form-privacy-notice {
+	clear: both;
+}
+
+/*--------------------------------------------------
+	Privacy notice — data grid + horizontal scroll (no hidden text)
+---------------------------------------------------*/
+
+.dark-section .privacy-data-table-scroll {
+	width: 100%;
+	margin-bottom: 24px;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	box-sizing: border-box;
+}
+
+.dark-section .privacy-data-table {
+	width: 100%;
+	min-width: 760px;
+	margin-bottom: 0;
+	box-sizing: border-box;
+}
+
+.dark-section .privacy-data-table__head-row,
+.dark-section .privacy-data-table__row {
+	display: grid;
+	grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+	gap: 0;
+	align-items: stretch;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dark-section .privacy-data-table__head-row {
+	background: rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dark-section .privacy-data-table__th,
+.dark-section .privacy-data-table__td {
+	padding: 12px 14px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 500;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	box-sizing: border-box;
+}
+
+.dark-section .privacy-data-table__th:last-child,
+.dark-section .privacy-data-table__td:last-child {
+	border-right: none;
+}
+
+.dark-section .privacy-data-table__th {
+	color: #fff;
+}
+
+.dark-section .privacy-data-table__td {
+	color: #ccc;
+}
+
+.dark-section .privacy-data-table__row:nth-child(even) .privacy-data-table__td {
+	background: rgba(255, 255, 255, 0.04);
+}

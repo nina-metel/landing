@@ -353,6 +353,22 @@
 		height:100vh;
 	}
 
+	figure.team-screen-banner {
+		width: 100%;
+		margin: 0;
+		line-height: 0;
+		height: auto !important;
+		background-color: #fff !important;
+	}
+
+	figure.team-screen-banner img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+	}
+
 	figure img {
 		max-width:100%;
 	}
@@ -3953,4 +3969,104 @@
 
 .white-space > span{
 	white-space: pre-line;
+}
+
+/* Cookie consent (analytics only after Accept) */
+.cookie-consent-banner {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000000;
+	padding: 1.25rem 1.5rem;
+	background: rgba(15, 16, 16, 0.98);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.45);
+	font-family: "Poppins", sans-serif;
+}
+
+.cookie-consent-banner__inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem 1.5rem;
+}
+
+.cookie-consent-banner__text {
+	margin: 0;
+	flex: 1 1 280px;
+	font-size: 14px;
+	line-height: 1.55;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.88);
+	text-transform: none;
+	letter-spacing: 0.01em;
+}
+
+.cookie-consent-banner__link {
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.cookie-consent-banner__link:hover {
+	color: #fff;
+}
+
+.cookie-consent-banner__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.65rem;
+	flex-shrink: 0;
+}
+
+.cookie-consent-banner__btn {
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	padding: 0.65rem 1.35rem;
+	border-radius: 0;
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	background: transparent;
+	color: rgba(255, 255, 255, 0.88);
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.cookie-consent-banner__btn:hover {
+	border-color: rgba(255, 255, 255, 0.55);
+	color: #fff;
+}
+
+.cookie-consent-banner__btn--accept {
+	background: #fff;
+	border-color: #fff;
+	color: #000;
+}
+
+.cookie-consent-banner__btn--accept:hover {
+	background: #e5e5e5;
+	border-color: #e5e5e5;
+	color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+	.cookie-consent-banner {
+		padding: 1rem 1rem 1.25rem;
+	}
+
+	.cookie-consent-banner__actions {
+		width: 100%;
+		justify-content: stretch;
+	}
+
+	.cookie-consent-banner__btn {
+		flex: 1;
+		text-align: center;
+	}
 }
