@@ -3488,7 +3488,7 @@ Function Core
 				}
 			
 				function loadNewContent(url, bool) {
-					url = ('' == url) ? 'index.html' : url;
+					url = ('' == url) ? 'main.html' : url;
 				
 				var section = $('<div class="cd-main-content "></div>');
 						
